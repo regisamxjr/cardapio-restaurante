@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Apple Chancery', cursive;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0b1a39;
+    color: #fff;
+    height: 80px;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    margin: 20px;
+    color: #ab8442;
+}
+
+.buttons button {
+    background-color: #0b1a39;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 40px;
+    width: auto;
+    margin: 1rem;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.buttons button:hover {
+    background-color: #4d3c1e;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principal {
+    background-image: url('/img/logo/logomoonight.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 19.5rem 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.principal h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cardapio {
+    background-color: #0b1a39;
+    padding: 4rem 2rem;
+}
+
+.cardapio h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+.pratos-principais h2,
+.sobremesas h2,
+.bebidas h2 {
+    font-size: 35px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ab8442;
+}
+
+.pratos,
+.opcoes {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.prato,
+.sobremesa,
+.bebida {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #0b1a39;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #FFD700;
+    justify-content: space-between;
+}
+
+.prato h3,
+.sobremesa h3,
+.bebida h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.prato p,
+.sobremesa p,
+.bebida p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.prato img,
+.sobremesa img,
+.bebida img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 2rem;
+    align-self: flex-end;
+}
+
+.prato .detalhes,
+.sobremesa .detalhes,
+.bebida .detalhes {
+    flex: 1;
+}
+
+.prato .detalhes p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.prato .detalhes .preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.bebidas-categoria {
+    margin-bottom: 3rem;
+}
+
+.bebidas-categoria h2 {
+    font-size: 2rem;
+    color: #ab8442;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bebida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0b1a39;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #FFD700;
+}
+
+.bebida img {
+    width: 100%;  
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+
+.bebida h3 {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.bebida p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.bebida .preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+
+    .principal {
+        padding: 5rem 2rem;
+    }
+
+    .pratos,
+    .opcoes {
+        display: block;
+    }
+
+    .prato img,
+    .sobremesa img,
+    .bebida img {
+        width: 90%;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .prato div,
+    .sobremesa div,
+    .bebida div {
+        width: 100%;
+    }
+}
