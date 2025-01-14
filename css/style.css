@@ -9,41 +9,56 @@ body {
     line-height: 1.6;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: #0b1a39;
     color: #fff;
-    height: 80px;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ab8442;
 }
 
 header h1 {
-    font-size: 1.2rem;
-    margin: 20px;
+    font-size: 1.5rem;
     color: #ab8442;
-}
-
-.buttons button {
-    background-color: #0b1a39;
-    color: #ffffff;
-    border: 1px solid #ab8442;
-    border-radius: 10px;
-    padding: 0.8rem 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    height: 40px;
-    width: auto;
-    margin: 1rem;
-    display: inline-block;
-    font-size: 0.9rem;
-}
-
-.buttons button:hover {
-    background-color: #4d3c1e;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Apple Chancery', cursive;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.menu .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    background-color: #0b1a39;
+    color: #ffffff;
+    border: 1px solid #ab8442;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.menu a:hover {
+    background-color: #4d3c1e;
 }
 
 .principal {
@@ -212,21 +227,21 @@ article {
 }
 
 footer {
-    background-color: #000000;
-    color: #fff;
+    background-color: #0b1a39;
+    color: #ab8442; 
     padding: 1rem;
     text-align: center;
+    border-top: 2px solid #ab8442;
 }
 
 footer a {
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff; 
     font-weight: bold;
 }
 
 footer a:hover {
-    color: #808080;
-    /* Cinza */
+    color: #4d3c1e;
 }
 
 footer i {
@@ -234,12 +249,17 @@ footer i {
 }
 
 footer h2 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #ab8442;
 }
 
 footer p {
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
+    color: #ffffff; 
 }
+
 
 @media (max-width: 768px) {
     .menu {
