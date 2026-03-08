@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Apple Chancery', cursive;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0b1a39;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Fallback for Apple Chancery if not available */
+@font-face {
+  font-family: 'Apple Chancery';
+  src: local('Apple Chancery'), local('Apple-Chancery'), url('https://fonts.cdnfonts.com/s/15867/AppleChancery.woff') format('woff');
+  font-display: swap;
+}
