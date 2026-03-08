@@ -11,7 +11,7 @@ const MenuItem = ({ name, description, price, image }: MenuItemProps) => (
     <div className="flex-1">
       <h3 className="text-[1.8rem] mb-4 text-[#ddd] font-['Apple_Chancery',_cursive]">{name}</h3>
       <p className="mb-4 text-[1.1rem] text-[#ddd] font-['Apple_Chancery',_cursive]">{description}</p>
-      <p className="text-[1.4rem] font-bold text-[#ab8442] font-['Apple_Chancery',_cursive]">R$ {price}</p>
+      <p className="text-4xl font-bold text-[#ab8442] font-['Apple_Chancery',_cursive]">R$ {price}</p>
     </div>
     <img src={image} alt={name} className="w-full md:w-[30%] h-auto rounded-lg md:ml-8 mt-4 md:mt-0 self-center md:self-end object-cover" />
   </div>
